@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Braindeer Games</title>
+  <meta name="description" content="Braindeer Games Studios LLC">
+  <meta name="author" content="Alexander Damrath">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/hover.css">
+
+</head>
+
+<body>
+
+  <script src="js/scripts.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+
+  <div class="headerBar">
+    <a href="#" id="homeLink">
+      <img id="logo-text" src="images/logo_text.png"/>
+      <img id="logo" src="images/logo.png"/>
+    </a>
+    <div class="navLinks">
+      <a class="nav-link hvr-sweep-to-left" id="gamesLink" href="#" >GAMES</a>
+      <a class="nav-link hvr-sweep-to-left" id="blogLink" href="#" >BLOG</a>
+      <a class="nav-link hvr-sweep-to-left" id="aboutLink" href="#" >ABOUT</a>
+    </div>
+  </div>
+
+  <img id="background" src="images/wood.jpeg"/>
+
+  <div class="pages">
+
+    <div class="page" id="home">
+      <div class="construction">
+        <h1> CURRENTLY UNDER CONSTRUCTION </h1>
+        <h2> CHECK BACK LATER</h2>
+      </div>
+    </div>
+
+    <div class="page" id="games">
+
+      <div class="game">
+        <img class="gameImg" src="images/screenshot.jpg"/>
+        
+      </div>
+
+      <div class="construction">
+        <h1> CURRENTLY UNDER CONSTRUCTION </h1>
+        <h2> CHECK BACK LATER</h2>
+      </div>
+    </div>
+
+    <div class="page" id="blog">
+      <div class="construction">
+        <h1> CURRENTLY UNDER CONSTRUCTION </h1>
+        <h2> CHECK BACK LATER</h2>
+      </div>
+    </div>
+
+    <div class="page" id="about">
+      <div class="construction">
+        <h1> CURRENTLY UNDER CONSTRUCTION </h1>
+        <h2> CHECK BACK LATER</h2>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footerBar">
+    <p class="copyright">&copy; <span id="year"></span> Braindeer Games LLC</p>
+    <div class="social">
+      <a href="https://braindeer-games.itch.io/" target="_blank">
+        <img class="social-link" src="images/itch.png"/>
+      </a>
+      <a href="https://twitter.com/BraindeerGames" target="_blank">
+        <img class="social-link" src="images/twitter.png"/>
+      </a>
+      <a href="https://www.facebook.com/BraindeerGames" target="_blank">
+        <img class="social-link" src="images/facebook.png"/>
+      </a>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var currentYear = (new Date()).getFullYear();
+    var slideAmt = 0;
+    $("#year").text(currentYear);
+
+    $( "#homeLink" ).click(function() {
+      $( ".pages" ).animate({
+        left: "0vw",
+      }, 1000, function() {
+        // Animation complete.
+      });
+    });
+
+    $( "#gamesLink" ).click(function() {
+      $( ".pages" ).animate({
+        left: "-100vw",
+      }, 1000, function() {
+        // Animation complete.
+      });
+    });
+
+    $( "#blogLink" ).click(function() {
+      $( ".pages" ).animate({
+        left: "-200vw",
+      }, 1000, function() {
+        // Animation complete.
+      });
+    });
+
+    $( "#aboutLink" ).click(function() {
+      $( ".pages" ).animate({
+        left: "-300vw",
+      }, 1000, function() {
+        // Animation complete.
+      });
+    });
+
+  </script>
+
+</body>
+</html>

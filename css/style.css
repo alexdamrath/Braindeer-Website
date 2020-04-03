@@ -1,0 +1,153 @@
+@font-face {
+    font-family: UI;
+    src: url(Segoe-UI.ttf);
+}
+
+.row {
+  margin: 0px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.headerBar {
+  background-color: rgba(0,0,0,.7);
+  position: fixed;
+  width: 100vw;
+  max-width: 100%;
+  left: 0px;
+  top: 0px;
+  padding: 12px;
+  z-index: 10;
+}
+
+#logo {
+  display: inline-block;
+  height: 52px;
+  width: auto;
+  padding-left: 20px;
+}
+
+#logo-text {
+  display: inline-block;
+  height: 52px;
+  width: auto;
+  margin-left: 60px;
+  border-right: 1px solid white;
+  padding-right: 25px;
+}
+
+.navLinks {
+  display: inline-block;
+  float: right;
+  margin-right: 50px;
+}
+
+.navLinks a {
+  margin-right: 45px;
+  padding: 10px 25px;
+  border-right: 1px solid white;
+  vertical-align: middle;
+  line-height: 2;
+  color: white;
+  text-decoration: none;
+  font-family: UI;
+  font-weight: bold;
+}
+
+.navLinks a:hover {
+  color: black;
+}
+
+#background {
+  position: fixed;
+  z-index: 0;
+  width: 110vw;
+  height: 110vh;
+  left: -20px;
+  top: -20px;
+  filter: blur(6px);
+}
+
+.footerBar {
+  background-color: rgba(0,0,0,.7);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  color: white;
+  padding: 5px 0px;
+}
+
+.copyright {
+  font-family: UI;
+  margin-left: 40px;
+  margin-bottom: 0px;
+  float: left;
+}
+
+.social {
+  float: right;
+  margin-right: 40px;
+}
+
+.social-link {
+  height: 30px;
+  width: auto;
+  margin-right: 20px;
+  padding: 3px;
+}
+
+.game {
+  overflow: hidden;
+  background-color: rgba(0,0,0,.5);
+}
+
+.gameImg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.pages {
+  padding: 0px;
+  left: 0vw;
+  top: 0px;
+  position: fixed;
+}
+
+.page {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  background: rgba(10,10,10,.6);
+}
+
+.construction {
+  width: 100vw;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 40%;
+  padding: 20px 0px;
+  background-color: rgba(0,0,0,.7);
+  border-top: 5px solid gold;
+  border-bottom: 5px solid gold;
+}
+
+#games {
+  left: 100vw;
+}
+#blog {
+  left: 200vw;
+}
+#about {
+  left: 300vw;
+}
+
+@media (max-width:870px) {
+  .navLinks {
+    display: none;
+  }
+}
